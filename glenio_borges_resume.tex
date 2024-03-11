@@ -1,0 +1,330 @@
+%-------------------------
+% Resume in Latex
+% Author : Glênio Borges
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{amsmath} % Include the amsmath package
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+%\newcommand{\resumeItem}[1]{
+%  \item\small{
+%    {#1 \vspace{-2pt}}
+%  }
+%}
+
+\newcommand{\simpleItem}[1]{
+  \item\small{
+    \textnormal{#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+
+
+%\newcommand{\resumeSubheading}[4]{
+%  \vspace{-2pt}\item
+%    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%      \textbf{#1} & #2 \\
+%      \textit{\small#3} & \textit{\small #4} \\
+%    \end{tabular*}\vspace{-7pt}
+%}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+%\newcommand{\resumeSubSubheading}[2]{
+%    \item
+%    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+%      \textit{\small#1} & \textit{\small #2} \\
+%    \end{tabular*}\vspace{-7pt}
+%}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+%\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+%\newcommand{\resumeItemListStart}{\begin{itemize}}
+%\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Glenio Borges} \\ \vspace{1pt}
+    \small New York Metro Area $*$ 917-353-4673 $*$ \href{mailto:x@x.com}{\underline{glenioborges@gmail.com}} $*$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/dambor}} $*$
+    \href{https://github.com/...}{\underline{github.com/dambor}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Platform Engineer}{ with 8+ years of expertise in crafting cloud-based platforms, containerized systems, and robust CI/CD pipelines. Proven track record of boosting developer efficiency, streamlining deployments, and ensuring high availability across AWS, GCP and Azure environments. Skilled collaborator with a passion for building scalable web applications and promoting best practices.}
+    }}
+  \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {VMware}{New York City, NY}
+      {Engineering Lead}{Jan. 2020 -- Mar. 2024}
+      \resumeItemListStart
+        \simpleItem{Led a team of 20+ technical professionals in the development and delivery of a platform-as-a-Service (PaaS) for Kubernetes.}
+        \simpleItem{Provided technical guidance and mentorship to team members, fostering a collaborative and innovative work environment.}
+        \simpleItem{Managed project timelines, resources, and deliverables to ensure on-time and within-budget completion.}
+        \simpleItem{Facilitated communication and collaboration between cross-functional teams, including engineering, product management, sales and marketing.}
+        \simpleItem{Conducted performance evaluations and provided feedback to team members to support their professional growth and development.}
+        \simpleItem{Implemented best practices, Continuous Integration and Delivery (CI/CD), and Agile methodologies to optimize team productivity and project efficiency.}
+        
+      \resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+      
+    \resumeSubheading
+      {Pivotal}{New York City, NY}
+      {Platform Architect}{Nov. 2018 -- Jan. 2020}
+
+
+      \resumeItemListStart
+
+        \simpleItem{Spearheaded the design and implementation of a Kubernetes-based infrastructure on AWS, reducing deployment times by 40\% and improving resource utilization.} 
+        \simpleItem{Led the development of CI/CD pipelines using Jenkins, enabling frequent releases and enhancing code quality.}
+        \simpleItem{Collaborated with multiple development teams to establish containerization standards, promoting consistency and efficient workflows.}
+        \simpleItem{Built infrastructure-as-code solutions with Terraform, streamlining provisioning and management of cloud resources.}
+        \simpleItem{Mentored junior engineers in best practices for cloud infrastructure and containerization.}
+
+      
+
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Pivotal}{São Paulo, Brazil}
+      {Solutions Director}{Dec. 2015 -- Nov. 2018}
+
+
+      \resumeItemListStart
+        \simpleItem{Designed and implemented BigData solutions, ensuring scalability and performance within complex enterprise environments. }
+        \simpleItem{Built a data-driven mobile digital banking platform, providing a personalized, integrated customer experience by leveraging digital intelligence based on big data and advanced analytics.}
+        \simpleItem{Developed and maintained relationships with key clients, ensuring high levels of customer satisfaction and retention.}
+       
+       
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Ericsson}{São Paulo, Brazil}
+      {Technical Project Lead}{Jul. 2011 -- Dec. 2015}
+    
+
+      \resumeItemListStart
+        \simpleItem{Established project plan baseline, defining scope, securing the necessary resources and plans and monitor all activities.}
+        \simpleItem{Drove project execution, tracked project activities, monitored and handled changes, conflicts and critical issues.}
+        \simpleItem{Handled customer and partner engagement, led customer relationship building confidence and trust, and ensured project progress arranging meetings and customer events.}
+        
+      \resumeItemListEnd   
+
+    \resumeSubheading
+      {Ericsson}{São Paulo, Brazil}
+      {Solutions Architect}{Jun. 2007 -- Jul. 2011}
+
+
+      \resumeItemListStart
+        \simpleItem{Led customer presentations and engagement.}
+        \simpleItem{Participated in C-Level discussions based on an end-to-end BSS/OSS implementation and integration.} 
+        \simpleItem{Contributed to and create RFP responses, solution documents, questionnaires, customer presentations, and related documents.}
+      \resumeItemListEnd   
+
+    \resumeSubheading
+      {Ericsson}{São Paulo, Brazil}
+      {System Integrator}{Oct. 2006 -- Jun. 2007}
+
+      
+      \resumeItemListStart
+        \simpleItem{Executed product configuration, integration and migration work.}
+        \simpleItem{Performed operation, administration and troubleshooting.}
+        \simpleItem{Prepared system test, module test and acceptance test.}
+
+        
+      \resumeItemListEnd   
+
+    \resumeSubheading
+      {Algar Telecom}{Uberlândia, Brazil}
+      {Software Engineer}{Mar. 2003 -- Oct. 2006}
+      
+      \resumeItemListStart
+        \simpleItem{Developed new business rules for filtering out of non billing-relevant call detail records}
+        \simpleItem{Supported and maintained critical mission Billing Mediation systems}
+        \simpleItem{Correlated different input sources call detail records}
+        \simpleItem{Aggregated partial call detail records related to the same call}
+        
+      \resumeItemListEnd   
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{University of Texas} $|$ \emph{Masters, Artificial Intelligence}} {Austin, TX - cohort fall 2024}
+    \resumeProjectHeading
+      {\textbf{São Paulo University - USP} $|$ \emph{MBA, Strategic Management}} {São Paulo, Brazil - Mar. 2014 - May. 2016}    \resumeProjectHeading
+      {\textbf{Pitágoras University} $|$ \emph{BSc, Information Systems}}{Uberlândia, Brazil - Jul. 2001 -- Jul. 2005}
+    \resumeProjectHeading
+      {\textbf{Federal University of Uberlândia} $|$ \emph{BA, Music Performance}}{Uberlândia, Brazil - Jul. 1999 -- Dec. 2003}  
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Shell, Python, Go, JavaScript, HTML/CSS} \\
+     \textbf{Databse}{: Redis, MongoDB, Postgres, Oracle, MySQL, Gemfire, Greenplum} \\
+     \textbf{Frameworks}{: Spring Boot, Spring Cloud} \\
+     \textbf{DevOps Tools}{: Git (GitLab, GitHub), CloudFoundry, Tanzu, Kubernetes, Docker, ArgoCD} \\
+     \textbf{Cloud Providers}{: GCP, AWS, Azure, vSphere} \\
+     \textbf{Infrastructure as Code (IaC)}{: Terraform, BOSH} \\
+     \textbf{Leadership}{: Career Management, Hiring, Team Building, Agile, Project Management}
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATES & AWARDS-----------
+
+\section{Certificates}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Applied Data Science Program} $|$ \emph{Massachussets Institute of Technology}}{2023}
+    \resumeProjectHeading
+      {\textbf{CKAD: Certified Kubernetes Application Developer} $|$ \emph{Linux Foundation}}{2019}  
+    \resumeProjectHeading
+      {\textbf{Data Science Specialization} $|$ \emph{John Hopkins Bloomberg School of Public Health}}{2015}
+    \resumeProjectHeading
+      {\textbf{Tame Big Data for Big Insight} $|$ \emph{Stanford University}}{2015}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading    
+      {\textbf{Developer Portal} $|$ \emph{TypeScript, Backstage.io, Postgres, Kubernetes, AWS}} {2023}  
+    \resumeProjectHeading
+      {\textbf{Learning Center} $|$ \emph{Python, Kubernetes, CRD, Operator, AWS}} {2020}
+    \resumeProjectHeading
+      {\textbf{Mission Control} $|$ \emph{Golang, ClusterAPI, JavaScript, AWS}} {2019}
+    \resumeProjectHeading  
+      {\textbf{Cloud Ridge} $|$ \emph{Spring Boot/Cloud, AWS, CloudFoundry, Jenkins}} {2018}
+    \resumeProjectHeading
+      {\textbf{Digital Bank} $|$ \emph{Python, Hadoop, Greenplum, Gemfire, MachineLearning, CloudFoundry, vSphere}} {2017}
+    \resumeProjectHeading
+      {\textbf{Fast Data} $|$ \emph{Spring Boot, Gemfire, CloudFoundry, vSphere}} {2016}
+    \resumeProjectHeading
+      {\textbf{Online Mediation} $|$ \emph{Java, WebService, SOA}} {2011}
+  \resumeSubHeadingListEnd
+
+
+\end{document}
+
+
